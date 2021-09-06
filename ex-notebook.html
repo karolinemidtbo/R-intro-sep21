@@ -228,6 +228,8 @@ auther: Arnstein Gjestland
 fig_caption: true
 ---</code></pre>
 <p>Det en ser ovenfor her er den såkalte YAML headeren til documentet. Den bestemmer bl.a. hvilket format vi vil ha <code>RMarkdown</code> dokumentet konvertert til. Her settes også navnet på <code>Bibliography</code>filen vi vil benytte. Den inneholder vår samling av referanser. Bare de referansene vi siterer i teksten vil bli lagt til referanselisten. RStudio vil selv endre litt i YAML, spesielt gjelder dette <code>output:</code> verdien som blir endret hvis vi velger et annet format i <code>Preview</code>menyen.</p>
+<p>Her tester vi matte <span class="math inline">\(\bar{X} = \frac{\sum_{i=1}^{N} x_i}{N}\)</span></p>
+<p><span class="math display">\[\bar{X} = \frac{\sum_{i=1}^{N} x_i}{N}\]</span> <span class="math display">\[\bar{X} = \frac{1}{N}\sum_{i=1}^{N} x_i\]</span></p>
 <pre class="r"><code>my_mod &lt;- lm(dist ~ speed, data = cars)
 summary(my_mod)</code></pre>
 <pre><code>## 
@@ -407,7 +409,7 @@ summary(my_mod)</code></pre>
 </table>
 <pre class="r"><code>pander(density(runif(10)))</code></pre>
 <table style="width:62%;">
-<caption>Kernel density of <em>runif(10)</em> (bandwidth: 0.1869853)</caption>
+<caption>Kernel density of <em>runif(10)</em> (bandwidth: 0.1739054)</caption>
 <colgroup>
 <col width="19%" />
 <col width="19%" />
@@ -423,33 +425,33 @@ summary(my_mod)</code></pre>
 <tbody>
 <tr class="odd">
 <td align="center"><strong>Min.</strong></td>
-<td align="center">-0.5357</td>
-<td align="center">0.002626</td>
+<td align="center">-0.4679</td>
+<td align="center">0.002795</td>
 </tr>
 <tr class="even">
 <td align="center"><strong>1st Qu.</strong></td>
-<td align="center">-0.02394</td>
-<td align="center">0.08886</td>
+<td align="center">0.01562</td>
+<td align="center">0.09118</td>
 </tr>
 <tr class="odd">
 <td align="center"><strong>Median</strong></td>
-<td align="center">0.4878</td>
-<td align="center">0.5474</td>
+<td align="center">0.4991</td>
+<td align="center">0.5545</td>
 </tr>
 <tr class="even">
 <td align="center"><strong>Mean</strong></td>
-<td align="center">0.4878</td>
-<td align="center">0.4879</td>
+<td align="center">0.4991</td>
+<td align="center">0.5164</td>
 </tr>
 <tr class="odd">
 <td align="center"><strong>3rd Qu.</strong></td>
-<td align="center">0.9995</td>
-<td align="center">0.7608</td>
+<td align="center">0.9827</td>
+<td align="center">0.9148</td>
 </tr>
 <tr class="even">
 <td align="center"><strong>Max.</strong></td>
-<td align="center">1.511</td>
-<td align="center">1.055</td>
+<td align="center">1.466</td>
+<td align="center">0.9965</td>
 </tr>
 </tbody>
 </table>
@@ -544,7 +546,9 @@ summary(my_mod)</code></pre>
   12) purus 
   12) sit 
   12) amet 
-  13) fermentum</code></pre>
+  13) fermentur
+  
+  </code></pre>
 <ol style="list-style-type: decimal">
 <li><p>Cras mattis iudicium purus sit amet fermentum.</p></li>
 <li><p>Nihil hic munitissimus habendi senatus locus, nihil horum?</p>
